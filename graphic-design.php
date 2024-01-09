@@ -12,9 +12,14 @@ include("Common/header.php")
             <img src="Medias/Tour.JPG" alt="3D project of a house">
         </div>
 
-        <div class="design-content-watch">
+        <div class="design-content">
             <p>3D ADVANCE SMARTWATCH</p>
-            <video src="Medias/Watch.MP4" controls width="800px"></video>
+            <video src="Medias/video-portoflio/Watch.MP4" controls width="800px"></video>
+            <h3>PS: Music was a bit too loud so try not to turn the volume to max level.</h3>
+        </div>
+        <div class="design-content">
+            <p>IMAGINARY DUCK STYLED VEHICLE</p>
+            <video src="Medias/video-portoflio/Imaginary-duck.mp4" controls width="800px"></video>
             <h3>PS: Music was a bit too loud so try not to turn the volume to max level.</h3>
         </div>
     </main>
