@@ -1,0 +1,459 @@
+/*==========MY COLOR PALETTE !! ============*/
+:root{
+    --color-for-header: #22b6b9e0;
+    --color-for-phone-menu:  #005273;
+    --color-for-language-menu:  #25476b;
+    --color-for-main: #c1fff9;
+    --color-for-footer: #a2d7cc;
+    --color-for-cursor-main: #3d7874;
+    --color-for-cursor-border: #5ecbc4;
+    --color-for-cursor-dot: #ffffff;
+    --color-for-pictures-hover: #71ecff;
+    --color-for-titles: #a4ffeb;
+    --color-for-contactBackground: #abf4ff;
+
+    --text-color: #000000;
+}
+
+/*============================================= */
+
+
+
+
+/*=========RESETTING ALL MARGIN ==========*/
+/*========================================*/
+*, *::after, *::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+/*========================================*/
+
+
+
+/*============== BASIC FORMATTING  ============== */
+/*============================================= */
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    /* cursor: none; */
+    font-size: clamp(12px, 14px, 1rem);
+    
+}
+
+main{
+background-color:var(--color-for-main);
+min-height: 100vh;
+}
+
+/* footer{
+   
+ background-color: var(--color-for-footer);
+    height: 30vh;
+    margin-top: 0%;
+} */
+.body-content{
+    margin-top: 7rem;
+}
+.header1{
+    background-color: #000000;
+    color: var(--color-for-header);
+    text-align: center;
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 7rem;
+    z-index: 1000;
+
+}
+.header2 {
+    width: 100%;
+    height: 5rem;
+    background-color: var(--color-for-header);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-weight:bolder;
+    padding: 0 100px;
+    position: fixed;
+    z-index: 1000;
+}
+.header2 a{
+    text-decoration: none;
+    color: black;
+}
+.menu{
+    height: 11vh;
+    width: 70%;
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+.menu div{
+    padding: 5px 10px;
+    height: 8vh;
+    width: 25vw;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.menu div:hover{
+    color: white;
+    transition: color 0.5s background-color 0.5s;
+    background-color: #0082b5;
+}
+.menu div:hover a{
+    color: white;
+}
+
+
+#check{
+    display: none;
+}
+.clicking-bar{
+    display: none;
+}
+
+
+/*============================================= */
+
+
+
+
+
+
+/*============== ALL DECORATION  ============== */
+/*============================================= */
+
+/*-----MY CURSOR-------*/
+.own-cursor{
+    height: 50px;
+    width: 50px;
+    background-color: var(--color-for-cursor-main);
+    border: 2px solid var(--color-for-cursor-border);
+    box-shadow: 2px 2px 2px black;
+    border-radius: 50%;
+    opacity: 68%;
+    
+    position: fixed;
+    top: -25px;
+    left: -25px;
+
+    transition: translate 0.1s cubic-bezier(.23,.68,.57,.94);
+    
+    pointer-events: none;
+   
+}
+.own-cursor::before{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    
+    transform: translate(-50%, -50%);
+
+    background-color: var(--color-for-cursor-dot);
+    
+}
+
+/*---------MAIN PAGE DECORATION ---------*/
+.mainmenu h1{
+    padding-top:7rem;
+}
+
+.main-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.main-page h3{
+    padding: 1.5rem;
+}
+.main-page p{
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+
+/*---------PHOTOS PAGE DECORATION ---------*/
+.photos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pictures img{
+    border-radius: 6px;
+    box-shadow: 3px 3px 5px rgba(28, 125, 125, 0.909);
+    width: 80%;
+    height: auto;
+
+}
+.pictures{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+    height: auto;
+    width: 100%;
+}
+.pictures:nth-child(1){
+    padding-top: 13vh;
+}
+.pictures:hover{
+    background-color:var(--color-for-pictures-hover);
+    transition: background-color 1.2s;
+}
+/*******STYLYING FOR CATEGORY******/
+.category-photos{
+    background-color: rgb(71, 136, 157);
+    width: 600px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    border-radius: 30px;
+    color: white;
+}
+.category-photos div a{
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+.category-photos div{
+   width: 550px;
+   display: flex;
+   justify-content: space-around;
+   padding-top: 10px;
+}
+
+/*PHOTOS PAGE DECORATION SECTION LINK TO PORTFOLIO*/
+.link{
+    width: 80vw;
+    height: 15vh;
+    background-color: var(--color-for-header);
+    color: aliceblue;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.link h3{
+    padding-bottom: 3vh;
+}
+.link a{
+    color: antiquewhite;
+}
+.link a:hover{
+    color: #ffabab;
+}
+
+/*---------VIDEOS PAGE DECORATION ---------*/
+.videos{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem;
+    
+}
+.video-content{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3rem;
+    align-items: center;
+}
+.video-content:nth-child(1){
+    padding-top: 6rem;
+}
+video{
+    width: 90%;
+    height: auto;
+}
+
+/*--------WEB PAGE DECORATION ---------------*/
+.web{
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 2rem;
+}
+.web h2{
+    padding-top: 5rem;
+    padding-bottom: 1.4rem;
+}
+
+
+/*--------CONTACT PAGE DECORATION ---------------*/
+.contact{
+    flex-direction: column;
+    align-items: center;
+    padding-top: 9rem;
+    
+    
+}
+.information{
+    height: 450px;
+    width: 350px;
+    background-color: var(--color-for-contactBackground);
+    border-radius: 10%;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.information h2{
+    padding: 2rem 0 4rem 0;
+}
+.information p{
+    padding-bottom: 1.5rem;
+    height: 100px;
+    width: 250px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+}
+
+.contact a{
+    color: rgb(0, 0, 0);
+}
+.contact a:hover{
+    color: rgb(255, 172, 172);
+}
+
+/*-----------DESIGN PAGE -------------*/
+.design h2{
+    font-weight: bolder;
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+}
+.design{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.design .design-content-watch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+    padding-top: 3rem ;
+    font-size: larger;
+    font-weight:900;
+}
+
+
+.design .design-content-tower{
+    display: flex;
+    padding-top: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    font-size: larger;
+    font-weight:900;
+}
+.design .design-content-tower img{
+    box-shadow: 8px 8px 4.6px rgba(28, 125, 125, 0.909);
+}
+.design .design-content-tower img:hover{
+    box-shadow: 8px 8px 4.6px rgba(31, 114, 210, 0.909);
+    transition: box-shadow 1.2s;
+}
+
+
+
+
+
+/*=============RESPONSIVE SCREEN ===========*/
+/*============================================= */
+
+
+
+/*===============COMPUTER ==========*/
+@media  screen and (max-width: 1770px) {
+    .header2{
+        padding: 0 70px;
+    }
+}
+
+/*===============COMPUTER OR TABLET 2==========*/
+@media  screen and (max-width: 1320px) {
+    .header2 {
+        padding: 0 50px;
+    }
+
+}
+
+/*===============TABLET & PHONE ==========*/
+@media screen and (max-width: 1100px){
+   
+    
+    .menu{
+        top: 5rem;
+        left: 0;
+        position: absolute;
+        height: 50vh;
+        width: 100%;
+        background-color:var(--color-for-phone-menu) ;
+        color: white;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease-out;
+        flex-direction: column;
+    
+    }
+    .menu div{
+        width:70vw;
+    }
+
+    .clicking-bar{
+        display: block;
+    }
+
+    #check:checked ~ .menu{
+        transform: translateX(0%);
+    }
+    .category-photos{
+        width: 70vw;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .category-photos div a{
+        text-decoration: none;
+        color: white;
+        width: 150px;
+        height: 50px;
+        border-radius: 50px;
+    }
+    .category-photos div{
+       width: auto;
+       height: 300px;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       padding-top: 10px;
+    }
+
+    /*=================*/
+    
+
+
+}
+/*==================================*/
+
