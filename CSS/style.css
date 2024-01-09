@@ -433,8 +433,16 @@ video{
 /*------------------------------------------*/
 .design h2{
     font-weight: bolder;
-    padding-top: 15vh;
-    padding-bottom: 5vh;
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+    width: 300px;
+    height: 80px;
+    background-color: var(--color-for-cursor-main);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 .design{
     display: flex;
@@ -463,6 +471,8 @@ video{
 }
 .design .design-content-tower img{
     box-shadow: 8px 8px 4.6px rgba(28, 125, 125, 0.909);
+    width: 75%;
+    height: auto;
 }
 .design .design-content-tower img:hover{
     box-shadow: 8px 8px 4.6px rgba(31, 114, 210, 0.909);

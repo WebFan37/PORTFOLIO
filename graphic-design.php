@@ -14,7 +14,7 @@ include("Common/header.php")
 
         <div class="design-content-watch">
             <p>3D ADVANCE SMARTWATCH</p>
-            <video src="Medias/Watch.MP4" controls width="600"></video>
+            <video src="Medias/Watch.MP4" controls width="800px"></video>
             <h3>PS: Music was a bit too loud so try not to turn the volume to max level.</h3>
         </div>
     </main>
