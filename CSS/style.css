@@ -160,6 +160,7 @@ min-height: 100vh;
 }
 
 /*---------MAIN PAGE DECORATION ---------*/
+/*------------------------------------------*/
 .mainmenu h1{
     padding-top:7rem;
 }
@@ -180,11 +181,13 @@ min-height: 100vh;
 
 
 /*---------PHOTOS PAGE DECORATION ---------*/
+/*------------------------------------------*/
 .photos{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .pictures img{
     border-radius: 6px;
     box-shadow: 3px 3px 5px rgba(28, 125, 125, 0.909);
@@ -197,11 +200,9 @@ min-height: 100vh;
     flex-direction: column;
     align-items: center;
     padding-bottom: 2rem;
+    padding-top: 2rem;
     height: auto;
     width: 100%;
-}
-.pictures:nth-child(1){
-    padding-top: 13vh;
 }
 .pictures:hover{
     background-color:var(--color-for-pictures-hover);
@@ -232,37 +233,79 @@ min-height: 100vh;
     justify-content: center;
     border-radius: 50px;
 }
+.category-photos div a:hover{
+    background-color: var(--color-for-cursor-dot);
+    transition: background-color 0.8s;
+    color: rgb(0, 0, 0);
+}
 .category-photos div{
    width: 550px;
    display: flex;
    justify-content: space-around;
    padding-top: 10px;
 }
+/********BUTTON BACK*********/
 
-/*PHOTOS PAGE DECORATION SECTION LINK TO PORTFOLIO*/
-.link{
-    width: 80vw;
-    height: 15vh;
-    background-color: var(--color-for-header);
-    color: aliceblue;
-    border-radius: 10px;
-
+.button-back a{
+    background-color: rgb(31, 132, 123);
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    width: 160px;
+    height: 80px;
+    border-radius: 15px;
+    position:fixed ;
+    right: 10%;
+    bottom: 20%;
+    padding: 10px;
 }
-.link h3{
-    padding-bottom: 3vh;
+.button-back a:hover{
+    background-color: var(--color-for-cursor-dot);
+    transition: background-color 0.8s;
+    color: rgb(0, 0, 0);
 }
-.link a{
-    color: antiquewhite;
+
+/********iPHone*********/
+.iphone{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.link a:hover{
-    color: #ffabab;
+/********fligh sim*********/
+.simulator{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/********mirrorless*********/
+.DSLR{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/********OnePLUS*********/
+.oneplus{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/********Samsung*********/
+.samsung{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*---------VIDEOS PAGE DECORATION ---------*/
+/*------------------------------------------*/
 .videos{
     display: flex;
     flex-direction: column;
@@ -284,6 +327,7 @@ video{
 }
 
 /*--------WEB PAGE DECORATION ---------------*/
+/*------------------------------------------*/
 .web{
     flex-direction: column;
     align-items: center;
@@ -296,6 +340,7 @@ video{
 
 
 /*--------CONTACT PAGE DECORATION ---------------*/
+/*------------------------------------------*/
 .contact{
     flex-direction: column;
     align-items: center;
@@ -336,6 +381,7 @@ video{
 }
 
 /*-----------DESIGN PAGE -------------*/
+/*------------------------------------------*/
 .design h2{
     font-weight: bolder;
     padding-top: 15vh;

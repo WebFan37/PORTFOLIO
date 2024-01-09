@@ -2,4 +2,8 @@
 include("Common/header.php");
 ?>
 
-<?php include("Common/category-menu.php"); ?>
+<main class="simulator">
+    <?php include("Common/category-menu.php"); ?>
+    <?php include("Common/button-back.php"); ?>
+    
+</main>

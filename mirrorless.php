@@ -3,4 +3,8 @@ include("Common/header.php");
 
 ?>
 
-<?php include("Common/category-menu.php"); ?>
+<main class="DSLR">
+    <?php include("Common/category-menu.php"); ?>
+    <?php include("Common/button-back.php"); ?>
+
+</main>

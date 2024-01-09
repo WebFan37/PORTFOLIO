@@ -5,6 +5,7 @@ include("Common/header.php");
     
     <?php include("Common/category-menu.php"); ?>
 
+    <h3>OR STARTING ENJOY MY TOP PICKED PICTURES!</h3>
         <section class="pictures">
             <h2>BRITISH COLUMBIA PARK</h2>
             <img src="Medias/top-picked-photos/2017-BC-travel.JPG" alt="British Columbia landscape with picnic table in">
