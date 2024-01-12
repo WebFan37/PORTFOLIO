@@ -277,6 +277,17 @@ min-height: 100vh;
     flex-direction: column;
     align-items: center;
 }
+.iphone h2{
+    font-weight: bolder;
+    width: 300px;
+    height: 80px;
+    background-color: var(--color-for-cursor-main);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
 .gallery{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -344,6 +355,17 @@ min-height: 100vh;
     flex-direction: column;
     align-items: center;
 }
+.oneplus h2{
+        font-weight: bolder;
+        width: 300px;
+        height: 80px;
+        background-color: var(--color-for-cursor-main);
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+}
 /********Samsung*********/
 /*********************/
 .samsung{
@@ -355,10 +377,24 @@ min-height: 100vh;
 
 /*---------VIDEOS PAGE DECORATION ---------*/
 /*------------------------------------------*/
+.videos h2{
+    font-weight: bolder;
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+    width: 300px;
+    height: 80px;
+    background-color: var(--color-for-cursor-main);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
 .videos{
     display: flex;
     flex-direction: column;
     padding: 2rem 2rem;
+    align-items: center;
     
 }
 .video-content{

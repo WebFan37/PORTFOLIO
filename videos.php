@@ -2,6 +2,7 @@
 
 <main class="videos">
         
+<h2>VIDEO PORTFOLIO</h2>
         <section class="video-content">
             <h3>MONTREAL BATEAU MOUCHE CRUISE EXPERIENCE</h3>
             <video src="Medias/video-portoflio/Cruise in Montreal.mp4" controls width="600" ></video>

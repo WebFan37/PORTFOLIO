@@ -6,8 +6,11 @@ include("Common/header.php");
 <main class="iphone">
 <?php include("Common/category-menu.php"); ?>
 <?php include("Common/button-back.php"); ?>
-
+    <h2>IPHONE PHOTOGRAPHY</h2>
+    
 <section class="gallery">
+
+    
     <div class="gallery-item">
         <img src="Medias/iPhones-photos/1.JPG" alt="Moutains around Banff tunnel mountain">
         <div class="description">
